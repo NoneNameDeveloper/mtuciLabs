@@ -1,4 +1,4 @@
-import requests # importing requests lib for working with web requests
+ import requests # importing requests lib for working with web requests
 
 app_id = "ae97c65bf76cef416ac3b8aeb6e4cac0" # app_id for openweathermap api
 city = "Moscow, RU" # city for openweathermap api to get data from Moscow

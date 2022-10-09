@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<p>
+		<form action="" method="post">
+		{% if data %} 		
+			<p>
+				Hello, {{data.full_name}}!<br>
+				Your login: {{data.login}}<br>
+				Your password: {{data.password}}
+			</p>
+		{% endif %}
+		</form>
+	</p>
+
+
+</body>
+</html>
