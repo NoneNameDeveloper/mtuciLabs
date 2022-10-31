@@ -1,0 +1,20 @@
+name: TestDeploy
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+    branches: [ dev ]
+    types: [ closed ]
+
+jobs:
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pull repo and install deps
+        uses: appleboy/ssh-action@master
+        with:
+          script: |
+            echo "test"
